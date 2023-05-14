@@ -7,11 +7,15 @@
     <title>To do list</title>
     <link rel="stylesheet" href="Styles/style.css">
     <script src="Scripts/script.js" defer></script>
+    <link rel="shortcut icon" href="Imgs/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>To do avancado</h1>
-    <div class="container"></div>
+    
+    <div class="container">
+        <header>
+            <h1>TO DO LIST</h1>
+        </header>
     
     <form id="form">
         <p>Adicione sua tarefa:</p>
@@ -23,7 +27,7 @@
         </div>
     </form>
 
-    <form id="edit-form">
+    <form id="edit-form" class="hide">
         <p>Edite sua tarefa:</p>
         <div class="control">
             <input type="text" id="edit-input">
@@ -34,25 +38,12 @@
         <button id="cancel-edit">Cancelar</button>
     </form>
 
-    <div id="toolbar">
-        <div id="search">
-        <h4>Pesquisar:</h4>
-        <form>
-            <input type="text" id="search-input" placeholder="Buscar">
-            <button id="erase-button">
-                <i class="fa-solid fa-delete-left"></i>
-            </button>
-        </form>
-        </div> 
-        <div id="filter">
-            <h4>Filtrar</h4>
-            <select id="filter-select">
-                <option value="all"></option>
-                <option value="done"></option>
-                <option value="todo"></option>
-            </select>
+
+        <div id="todo-list">
+            
         </div>
-</div>
+
+
 </div>
 </body>
 </html>
